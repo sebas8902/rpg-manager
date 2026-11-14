@@ -31,7 +31,7 @@ git --version
 
 ## Descargar el proyecto
 
-Abre PowerShell y ejecuta:
+Abre la Terminal ya sea en VS Codes o Powershell y ejecuta:
 
 ```powershell
 git clone https://github.com/sebas8902/rpg-manager.git
@@ -51,7 +51,7 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-Si PowerShell impide activar el entorno virtual por la política de ejecución, no necesitas cambiar la configuración de Windows. Ejecuta los comandos directamente con el Python del entorno:
+Si la Terminal impide activar el entorno virtual por la política de ejecución, no necesitas cambiar la configuración de Windows. Ejecuta los comandos directamente con el Python del entorno:
 
 ```powershell
 .\.venv\Scripts\python.exe -m pip install --upgrade pip
