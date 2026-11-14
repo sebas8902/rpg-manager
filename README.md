@@ -90,24 +90,3 @@ Las dependencias del proyecto están registradas en `requirements.txt`:
 
 Se instalan con `python -m pip install -r requirements.txt`.
 
-## Estructura del proyecto
-
-```text
-rpg-manager/
-├── main.py
-├── modelos/
-│   ├── __init__.py
-│   ├── inventario.py
-│   └── personaje.py
-├── servicios/
-│   ├── __init__.py
-│   └── gestor_juego.py
-├── interfaz/
-│   ├── __init__.py
-│   └── ventana.py
-├── pruebas/
-│   └── test_personaje.py
-├── .gitignore
-├── requirements.txt
-└── README.md
-```
