@@ -22,7 +22,7 @@ Antes de comenzar, asegúrate de tener:
 
 Al instalar Python desde [python.org](https://www.python.org/downloads/windows/), activa la opción **Add Python to PATH**. La instalación estándar de Python para Windows incluye Tkinter, que utiliza la interfaz gráfica.
 
-Puedes comprobar que Python y Git están disponibles abriendo PowerShell y ejecutando:
+Puedes comprobar que Python y Git están disponibles abriendo tu Terminal y ejecutando:
 
 ```powershell
 py --version
