@@ -1,78 +1,96 @@
 # RPG Manager
 
-Aplicación de escritorio de ejemplo para demostrar programación orientada a objetos en Python. Incluye una interfaz gráfica con `CustomTkinter` y pruebas automatizadas con `pytest`.
+Aplicación de escritorio desarrollada en Python para demostrar conceptos de programación orientada a objetos. Incluye una interfaz gráfica creada con `CustomTkinter` y pruebas automatizadas con `pytest`.
 
 ## Características
 
-- Clases abstractas, herencia y polimorfismo.
-- Encapsulamiento con validaciones.
-- Composición con `Inventario`.
-- Lógica del juego separada de la interfaz gráfica.
-- Interfaz de escritorio basada en `CustomTkinter`.
-- Pruebas unitarias con `pytest`.
+- Clases, herencia y polimorfismo.
+- Encapsulamiento y validaciones.
+- Composición mediante la clase `Inventario`.
+- Separación entre la lógica del juego y la interfaz gráfica.
+- Interfaz de escritorio con `CustomTkinter`.
+- Pruebas automatizadas con `pytest`.
 
-## Requisitos
+## Requisitos para Windows
 
-- Python 3.10 o superior.
-- Git.
-- Un entorno de escritorio con soporte gráfico para abrir la ventana.
-- En Linux, si Python no incluye Tkinter, instala el paquete del sistema correspondiente (por ejemplo, `python3-tk` en Debian/Ubuntu).
+Antes de comenzar, asegúrate de tener:
 
-## Clonar y ejecutar
+- Windows 10 o Windows 11.
+- Python 3.10 o una versión posterior.
+- Git instalado.
+- Conexión a internet durante la instalación de las dependencias.
 
-Clona el repositorio y entra en su directorio:
+Al instalar Python desde [python.org](https://www.python.org/downloads/windows/), activa la opción **Add Python to PATH**. La instalación estándar de Python para Windows incluye Tkinter, que utiliza la interfaz gráfica.
 
-```bash
+Puedes comprobar que Python y Git están disponibles abriendo PowerShell y ejecutando:
+
+```powershell
+py --version
+git --version
+```
+
+## Descargar el proyecto
+
+Abre PowerShell y ejecuta:
+
+```powershell
 git clone https://github.com/sebas8902/rpg-manager.git
 cd rpg-manager
 ```
 
-Crea un entorno virtual e instala las dependencias.
+Si el repositorio es privado, GitHub solicitará que uses una cuenta autorizada. Si es público, cualquier persona podrá clonarlo.
 
-### Windows (PowerShell)
+## Instalar y ejecutar
+
+Desde la carpeta raíz del proyecto, crea un entorno virtual e instala las dependencias:
 
 ```powershell
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-Si PowerShell bloquea la activación del entorno, puedes ejecutar directamente:
+Si PowerShell impide activar el entorno virtual por la política de ejecución, no necesitas cambiar la configuración de Windows. Ejecuta los comandos directamente con el Python del entorno:
 
 ```powershell
+.\.venv\Scripts\python.exe -m pip install --upgrade pip
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe main.py
 ```
 
-### macOS o Linux
+Cuando la instalación termine, inicia la aplicación con:
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-```
-
-Inicia la aplicación desde la raíz del proyecto:
-
-```bash
+```powershell
 python main.py
 ```
 
-En macOS/Linux puedes usar `python3 main.py` si el comando `python` no apunta a Python 3.
+La ventana de RPG Manager debería abrirse. Ejecuta el comando desde la carpeta principal del proyecto, donde se encuentra `main.py`.
 
 ## Ejecutar las pruebas
 
-Con el entorno virtual activado:
+Las pruebas comprueban parte del comportamiento de las clases del proyecto. Desde la carpeta principal, con el entorno virtual activado, ejecuta:
 
-```bash
-python -m pytest
+```powershell
+python -m pytest -v
 ```
 
-## Acceso al repositorio
+También puedes ejecutarlas sin activar el entorno virtual:
 
-Este repositorio es privado. Para clonarlo, la otra persona debe iniciar sesión en GitHub con una cuenta que tenga acceso al repositorio (por ejemplo, invitándola como colaboradora). Si se hace público desde la configuración de GitHub, cualquier persona podrá clonarlo sin invitación.
+```powershell
+.\.venv\Scripts\python.exe -m pytest -v
+```
 
-## Estructura
+## Dependencias
+
+Las dependencias del proyecto están registradas en `requirements.txt`:
+
+- `customtkinter`: interfaz gráfica.
+- `pytest`: ejecución de pruebas automatizadas.
+
+Se instalan con `python -m pip install -r requirements.txt`.
+
+## Estructura del proyecto
 
 ```text
 rpg-manager/
@@ -88,8 +106,14 @@ rpg-manager/
 │   ├── __init__.py
 │   └── ventana.py
 ├── pruebas/
-│   ├── __init__.py
 │   └── test_personaje.py
+├── .gitignore
 ├── requirements.txt
 └── README.md
 ```
+
+## Notas
+
+- No elimines `.gitignore`: evita que Git incluya archivos temporales, caché de Python y el entorno virtual `.venv` en el repositorio.
+- No es necesario instalar `pytest` ni `customtkinter` globalmente; instálalos dentro del entorno virtual del proyecto.
+- Si aparece un error, verifica que estás en la carpeta `rpg-manager` y que instalaste las dependencias usando el mismo Python con el que ejecutas `main.py`.
