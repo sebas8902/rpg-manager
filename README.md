@@ -111,9 +111,3 @@ rpg-manager/
 ├── requirements.txt
 └── README.md
 ```
-
-## Notas
-
-- No elimines `.gitignore`: evita que Git incluya archivos temporales, caché de Python y el entorno virtual `.venv` en el repositorio.
-- No es necesario instalar `pytest` ni `customtkinter` globalmente; instálalos dentro del entorno virtual del proyecto.
-- Si aparece un error, verifica que estás en la carpeta `rpg-manager` y que instalaste las dependencias usando el mismo Python con el que ejecutas `main.py`.
