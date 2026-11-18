@@ -1,9 +1,6 @@
 # RPG Manager — Simulador de Combate Orientado a Objetos
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)
-![CustomTkinter](https://img.shields.io/badge/GUI-CustomTkinter%205.2.2-0078D7)
-![Pytest](https://img.shields.io/badge/Testing-Pytest%208.0.0-0A9EDC?logo=pytest&logoColor=white)
-![Paradigma](https://img.shields.io/badge/Paradigma-POO-success)
+
 
 **RPG Manager** es una aplicación de escritorio interactiva desarrollada en Python que simula la creación de héroes y combates por turnos en un entorno de rol (RPG). El proyecto está diseñado bajo una arquitectura modular limpia para demostrar de forma práctica y verificable los principios fundamentales de la Programación Orientada a Objetos (POO), integrando una interfaz gráfica moderna con CustomTkinter y pruebas unitarias automatizadas con Pytest.
 
