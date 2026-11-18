@@ -5,9 +5,9 @@
 ![Pytest](https://img.shields.io/badge/Testing-Pytest%208.0.0-0A9EDC?logo=pytest&logoColor=white)
 ![Paradigma](https://img.shields.io/badge/Paradigma-POO-success)
 
-**RPG Manager** es una aplicación de escritorio interactiva desarrollada en **Python** que simula la creación de héroes y combates por turnos en un entorno de rol (RPG). El proyecto está diseñado bajo una arquitectura modular limpia para demostrar de forma práctica y verificable los principios fundamentales de la **Programación Orientada a Objetos (POO)**, integrando una interfaz gráfica moderna con **CustomTkinter** y pruebas unitarias automatizadas con **Pytest**.
+**RPG Manager** es una aplicación de escritorio interactiva desarrollada en Python que simula la creación de héroes y combates por turnos en un entorno de rol (RPG). El proyecto está diseñado bajo una arquitectura modular limpia para demostrar de forma práctica y verificable los principios fundamentales de la Programación Orientada a Objetos (POO), integrando una interfaz gráfica moderna con CustomTkinter y pruebas unitarias automatizadas con Pytest.
 
----
+
 
 ## Tabla de Contenidos
 
@@ -44,11 +44,11 @@ Durante el aprendizaje de la Programación Orientada a Objetos, los conceptos te
 
 ## Funcionalidades Principales
 
-- **🧙‍♂️ Reclutamiento de Personajes con Validación:** Creación dinámica de héroes de distintas clases (**⚔️ Guerrero** y **🔮 Mago**), validando nombres vacíos, espacios innecesarios y nombres duplicados.
-- **⚔️ Simulación de Combate por Turnos:** Enfrentamientos entre dos personajes seleccionados donde cada clase ejecuta su propio estilo de ataque y cálculo de daño, actualizando sus puntos de vida (`HP`) en tiempo real.
-- **🛡️ Gestión de Estado e Integridad:** Control automático de puntos de vida (evitando valores negativos), detección de personajes derrotados (`💀 Caído`) y restricción de auto-ataques.
-- **🎒 Sistema de Inventario por Composición:** Cada personaje posee su propia instancia privada de `Inventario` capaz de almacenar y listar objetos.
-- **📜 Bitácora Interactiva de Batalla:** Registro detallado en tiempo real de reclutamientos, ataques, daño infligido, alertas de validación y resultados de combate, con opción de limpieza rápida.
+- **Reclutamiento de Personajes con Validación:** Creación dinámica de héroes de distintas clases (**⚔️ Guerrero** y **🔮 Mago**), validando nombres vacíos, espacios innecesarios y nombres duplicados.
+- **Simulación de Combate por Turnos:** Enfrentamientos entre dos personajes seleccionados donde cada clase ejecuta su propio estilo de ataque y cálculo de daño, actualizando sus puntos de vida (`HP`) en tiempo real.
+- **Gestión de Estado e Integridad:** Control automático de puntos de vida (evitando valores negativos), detección de personajes derrotados (`💀 Caído`) y restricción de auto-ataques.
+- **Sistema de Inventario por Composición:** Cada personaje posee su propia instancia privada de `Inventario` capaz de almacenar y listar objetos.
+- **Bitácora Interactiva de Batalla:** Registro detallado en tiempo real de reclutamientos, ataques, daño infligido, alertas de validación y resultados de combate, con opción de limpieza rápida.
 
 
 
@@ -85,10 +85,10 @@ El diseño del software aplica los principios de POO de manera estructural y fun
 
 Verifica que ambos estén disponibles ejecutando en tu terminal:
 
-```powershell
-py --version
-git --version
-```
+   ```powershell
+   py --version
+   git --version
+   ```
 
 ### Pasos de instalación
 
