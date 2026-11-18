@@ -9,7 +9,7 @@
 
 ---
 
-## 📋 Tabla de Contenidos
+## Tabla de Contenidos
 
 1. [Descripción del Problema](#-descripción-del-problema)
 2. [Objetivos del Proyecto](#-objetivos-del-proyecto)
@@ -23,26 +23,26 @@
 10. [Ejecución de Pruebas Automatizadas](#-ejecución-de-pruebas-automatizadas)
 11. [Autor](#-autor)
 
----
 
-## 🎯 Descripción del Problema
+
+## Descripción del Problema
 
 Durante el aprendizaje de la Programación Orientada a Objetos, los conceptos teóricos como la abstracción, el polimorfismo, el encapsulamiento y la composición suelen estudiarse mediante ejemplos aislados en consola. Esto dificulta visualizar cómo colaboran múltiples clases en un sistema real y cómo se desacopla la lógica de negocio de la presentación visual.
 
 **RPG Manager** resuelve esta brecha al modelar un dominio intuitivo (un sistema de combate RPG) donde cada regla del juego está gobernada por objetos con responsabilidades bien definidas, permitiendo al usuario interactuar con ellos en tiempo real mediante una interfaz gráfica clara y reactiva.
 
----
 
-## 🚀 Objetivos del Proyecto
+
+## Objetivos del Proyecto
 
 - **Integrar los pilares de la POO** (abstracción, encapsulamiento, herencia, polimorfismo y composición) en una aplicación funcional y cohesiva.
 - **Separar responsabilidades** mediante una arquitectura en capas (`modelos`, `servicios` e `interfaz`), evitando acoplar las reglas de combate dentro de los componentes visuales.
 - **Ofrecer una interfaz gráfica moderna e intuitiva** utilizando programación orientada a eventos y selectores visuales con iconos.
 - **Garantizar la calidad del código** mediante validaciones de estado y pruebas unitarias automatizadas con `pytest`.
 
----
 
-## ✨ Funcionalidades Principales
+
+## Funcionalidades Principales
 
 - **🧙‍♂️ Reclutamiento de Personajes con Validación:** Creación dinámica de héroes de distintas clases (**⚔️ Guerrero** y **🔮 Mago**), validando nombres vacíos, espacios innecesarios y nombres duplicados.
 - **⚔️ Simulación de Combate por Turnos:** Enfrentamientos entre dos personajes seleccionados donde cada clase ejecuta su propio estilo de ataque y cálculo de daño, actualizando sus puntos de vida (`HP`) en tiempo real.
@@ -50,9 +50,9 @@ Durante el aprendizaje de la Programación Orientada a Objetos, los conceptos te
 - **🎒 Sistema de Inventario por Composición:** Cada personaje posee su propia instancia privada de `Inventario` capaz de almacenar y listar objetos.
 - **📜 Bitácora Interactiva de Batalla:** Registro detallado en tiempo real de reclutamientos, ataques, daño infligido, alertas de validación y resultados de combate, con opción de limpieza rápida.
 
----
 
-## 🧩 Arquitectura y Aplicación de POO
+
+## Arquitectura y Aplicación de POO
 
 El diseño del software aplica los principios de POO de manera estructural y funcional:
 
@@ -65,47 +65,18 @@ El diseño del software aplica los principios de POO de manera estructural y fun
 | **Composición** | Cada `Personaje` instancia su propio objeto `self.inventario = Inventario()` | `modelos/personaje.py`<br>`modelos/inventario.py` | Modela una relación fuerte donde el inventario pertenece exclusivamente al ciclo de vida del personaje. |
 | **Separación de Capas** | Desacoplamiento entre `modelos`, `servicios` (`GestorJuego`) e `interfaz` (`VentanaPrincipal`) | Todo el proyecto | La lógica del juego funciona de manera independiente a `CustomTkinter`, facilitando las pruebas automatizadas. |
 
----
 
-## 🛠️ Tecnologías Utilizadas
+
+## Tecnologías Utilizadas
 
 - **Lenguaje:** Python 3.10 o superior.
 - **Interfaz Gráfica (GUI):** [CustomTkinter 5.2.2](https://github.com/TomSchimansky/CustomTkinter) — Biblioteca moderna basada en Tkinter con soporte para temas oscuros, widgets estilizados (`CTkSegmentedButton`, `CTkComboBox`, `CTkFrame`) y diseño adaptable.
 - **Pruebas Automatizadas:** [Pytest 8.0.0](https://docs.pytest.org/) — Framework para verificar el encapsulamiento, polimorfismo, composición y manejo de excepciones.
 - **Módulos Estándar de Python:** `abc` (clases base abstractas) y `typing` (anotaciones de tipo).
 
----
 
-## 📁 Estructura del Proyecto
 
-```text
-rpg-manager/
-│
-├── main.py                     # Punto de entrada principal que inicializa la aplicación
-├── requirements.txt            # Dependencias externas del proyecto (customtkinter, pytest)
-├── .gitignore                  # Exclusión de archivos temporales, caché y entornos virtuales
-├── README.md                   # Documentación general, instalación y manual de uso
-│
-├── modelos/                    # Capa de dominio y entidades principales (POO)
-│   ├── __init__.py
-│   ├── personaje.py            # Clase abstracta Personaje y subclases Guerrero y Mago
-│   └── inventario.py           # Clase Inventario (relación de composición con Personaje)
-│
-├── servicios/                  # Capa de lógica de negocio y coordinación
-│   ├── __init__.py
-│   └── gestor_juego.py         # Clase GestorJuego (creación, validaciones y turnos de combate)
-│
-├── interfaz/                   # Capa de presentación (GUI)
-│   ├── __init__.py
-│   └── ventana.py              # Clase VentanaPrincipal construida con CustomTkinter
-│
-└── pruebas/                    # Suite de pruebas unitarias
-    └── test_personaje.py       # Pruebas de encapsulamiento, polimorfismo, composición y validación
-```
-
----
-
-## ⚙️ Instalación y Configuración
+## Instalación y Configuración
 
 ### Requisitos previos (Windows)
 - **Sistema Operativo:** Windows 10 o Windows 11.
@@ -139,14 +110,14 @@ git --version
    python -m pip install -r requirements.txt
    ```
 
-> **💡 Nota sobre permisos en PowerShell:** Si Windows restringe la activación de scripts con `Activate.ps1`, puedes instalar las dependencias y ejecutar el proyecto directamente invocando el ejecutable del entorno virtual:
+> ** Nota sobre permisos en PowerShell:** Si Windows restringe la activación de scripts con `Activate.ps1`, puedes instalar las dependencias y ejecutar el proyecto directamente invocando el ejecutable del entorno virtual:
 > ```powershell
 > .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 > ```
 
----
 
-## ▶️ Ejecución de la Aplicación
+
+## Ejecución de la Aplicación
 
 Con el entorno virtual activado, ejecuta desde la raíz del proyecto:
 
@@ -156,9 +127,9 @@ python main.py
 
 *(O sin activar el entorno virtual: `\.venv\Scripts\python.exe main.py`)*
 
----
 
-## 📖 Manual de Usuario
+
+## Manual de Usuario
 
 1. **Reclutar Personajes:**
    - En el panel superior **✨ Reclutar Nuevo Personaje**, escribe el nombre del héroe (por ejemplo, `Aragorn` o `Gandalf`).
@@ -173,9 +144,9 @@ python main.py
    - En la sección **📜 Bitácora de Eventos y Combate** podrás seguir el historial completo de daño infligido, vida restante, errores de validación o victoria final.
    - Usa el botón **🧹 Limpiar** en la esquina superior derecha del panel de registro para vaciar la consola cuando desees iniciar una nueva sesión limpia.
 
----
 
-## 🧪 Ejecución de Pruebas Automatizadas
+
+## Ejecución de Pruebas Automatizadas
 
 El proyecto incluye pruebas unitarias con `pytest` para validar el correcto funcionamiento de las reglas de negocio y principios de POO (`test_encapsulamiento_vida`, `test_polimorfismo_ataque`, `test_composicion_inventario` y `test_creacion_y_validacion_nombre`).
 
@@ -187,7 +158,7 @@ python -m pytest -v
 
 *(O sin activar el entorno virtual: `\.venv\Scripts\python.exe -m pytest -v`)*
 
----
+
 
 ## 👤 Autor
 
