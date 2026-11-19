@@ -6,22 +6,6 @@
 
 
 
-## Tabla de Contenidos
-
-1. [Descripción del Problema](#-descripción-del-problema)
-2. [Objetivos del Proyecto](#-objetivos-del-proyecto)
-3. [Funcionalidades Principales](#-funcionalidades-principales)
-4. [Arquitectura y Aplicación de POO](#-arquitectura-y-aplicación-de-poo)
-5. [Tecnologías Utilizadas](#-tecnologías-utilizadas)
-6. [Estructura del Proyecto](#-estructura-del-proyecto)
-7. [Instalación y Configuración](#-instalación-y-configuración)
-8. [Ejecución de la Aplicación](#-ejecución-de-la-aplicación)
-9. [Manual de Usuario](#-manual-de-usuario)
-10. [Ejecución de Pruebas Automatizadas](#-ejecución-de-pruebas-automatizadas)
-11. [Autor](#-autor)
-
-
-
 ## Descripción del Problema
 
 Durante el aprendizaje de la Programación Orientada a Objetos, los conceptos teóricos como la abstracción, el polimorfismo, el encapsulamiento y la composición suelen estudiarse mediante ejemplos aislados en consola. Esto dificulta visualizar cómo colaboran múltiples clases en un sistema real y cómo se desacopla la lógica de negocio de la presentación visual.
