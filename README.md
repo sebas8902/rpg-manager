@@ -113,17 +113,17 @@ python main.py
 ## Manual de Usuario
 
 1. **Reclutar Personajes:**
-   - En el panel superior **✨ Reclutar Nuevo Personaje**, escribe el nombre del héroe (por ejemplo, `Aragorn` o `Gandalf`).
+   - En el panel superior **Reclutar Nuevo Personaje**, escribe el nombre del héroe (por ejemplo, `Aragorn` o `Gandalf`).
    - Selecciona su clase mediante el selector visual con iconos: **⚔️ Guerrero** (`120 HP`, ataque físico con espada) o **🔮 Mago** (`80 HP`, ataque mágico con bola de fuego).
-   - Haz clic en **➕ Crear**. El personaje aparecerá registrado en la bitácora inferior y se cargará automáticamente en los selectores de combate.
+   - Haz clic en **Crear**. El personaje aparecerá registrado en la bitácora inferior y se cargará automáticamente en los selectores de combate.
 
 2. **Configurar y Simular un Combate:**
-   - En el panel **⚔️ Selección de Combatientes**, elige al atacante en el primer desplegable y al defensor en el segundo. Cada opción muestra el icono de su clase y sus puntos de vida actuales (ej. `⚔️ Aragorn (120 HP)` vs `🔮 Gandalf (80 HP)`).
-   - Haz clic en **🔥 Simular Turno**. Ambos combatientes intercambiarán ataques (si el defensor sobrevive al primer golpe) y se actualizarán sus estados en tiempo real.
+   - En el panel **Selección de Combatientes**, elige al atacante en el primer desplegable y al defensor en el segundo. Cada opción muestra el icono de su clase y sus puntos de vida actuales (ej. `⚔️ Aragorn (120 HP)` vs `🔮 Gandalf (80 HP)`).
+   - Haz clic en **Simular Turno**. Ambos combatientes intercambiarán ataques (si el defensor sobrevive al primer golpe) y se actualizarán sus estados en tiempo real.
 
 3. **Consultar o Limpiar la Bitácora:**
-   - En la sección **📜 Bitácora de Eventos y Combate** podrás seguir el historial completo de daño infligido, vida restante, errores de validación o victoria final.
-   - Usa el botón **🧹 Limpiar** en la esquina superior derecha del panel de registro para vaciar la consola cuando desees iniciar una nueva sesión limpia.
+   - En la sección **Bitácora de Eventos y Combate** podrás seguir el historial completo de daño infligido, vida restante, errores de validación o victoria final.
+   - Usa el botón **Limpiar** en la esquina superior derecha del panel de registro para vaciar la consola cuando desees iniciar una nueva sesión limpia.
 
 
 
@@ -141,7 +141,7 @@ python -m pytest -v
 
 
 
-## 👤 Autor
+## Autor
 
 - **Sebastian DeLuque Garcia** — [@sebas8902](https://github.com/sebas8902)
 - Proyecto desarrollado para la asignatura de **Programación Orientada a Objetos**.
